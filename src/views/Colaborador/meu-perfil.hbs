@@ -1,0 +1,81 @@
+<div id='page-perfil'>
+  {{> header-simple }}
+  <div class='page-header-content'>
+
+    <div class='profile-image'>
+      <img src='/img/perfil.jpg' alt='Foto de perfil' />
+    </div>
+    <div class='profile-text'>
+      <p>{{nome}}
+        <br />
+        <span>{{cargo}} - {{setor}} </span>
+      </p>
+    </div>
+  </div>
+  <main>
+
+    <fieldset>
+      <legend>Meus dados</legend>
+
+      <div class='input-block'>
+        <label for='name'>Nome</label>
+        <input type='text' id='name' />
+      </div>
+
+      <div class='input-block'>
+        <label for='name'>Sobrenome</label>
+        <input type='text' id='name' />
+      </div>
+
+      <div class='input-block'>
+        <label for='name'>Link da foto</label>
+        <input type='text' id='name' />
+      </div>
+
+      <div class='input-block'>
+        <label for='name'>Frase</label>
+        <input type='text' id='name' />
+      </div>
+
+      <div class='input-block'>
+        <label for='name'>Cargo</label>
+        <input type='text' id='name' />
+      </div>
+
+      <div class='input-block'>
+        <label for='name'>Setor</label>
+        <input type='text' id='name' />
+      </div>
+
+    </fieldset>
+    <fieldset>
+      <legend>Alterar senha</legend>
+
+      <div class='input-block'>
+        <label for='name'>Senha antiga</label>
+        <input type='password' id='name' />
+      </div>
+
+      <div class='input-block'>
+        <label for='name'>Nova Senha</label>
+        <input type='password' id='name' />
+      </div>
+
+      <div class='input-block'>
+        <label for='name'>Confirmar nova senha</label>
+        <input type='password' id='name' />
+      </div>
+
+    </fieldset>
+
+    <footer>
+      <p>
+        Importante!
+        <br />
+        Preencha todos os dados
+      </p>
+      <button>Atualizar perfil</button>
+    </footer>
+  </main>
+  <p class='space'>Espaço adicional</p>
+</div>

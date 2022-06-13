@@ -1,0 +1,252 @@
+/*LOGIN*/
+#page-login {
+  height: 100vh;
+  width: 100vw;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Archivo;
+}
+
+#page-login .login-container {
+  max-width: 43rem;
+  width: 100%;
+  height: auto;
+  margin: 4rem;
+  background: var(--cor-de-fundo);
+  border-radius: 0.7rem;
+}
+
+#page-login .login-container .logo img {
+  display: block;
+  width: 8rem;
+  height: 8rem;
+  margin: 3rem auto;
+}
+
+#page-login .login-container .title p {
+  margin-bottom: 15px;
+  font-size: 2.4rem;
+  text-align: center;
+  color: #333;
+  font-family: Archivo;
+}
+
+#page-login .login-container .form {
+  margin-bottom: 2rem;
+  background-color: #fff;
+  border: 1px solid var(--cor-principal-2);
+  border-radius: 5px;
+  margin: 2rem 3rem 4rem 3rem;
+  padding: 3rem;
+}
+
+#page-login .login-container .form .input_field {
+  margin-bottom: 15px;
+  position: relative;
+}
+
+#page-login .login-container .form .input_field label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 7px;
+  color: #24292e;
+  font-size: 1.5rem;
+}
+
+#page-login .login-container .form .input_field .input {
+  width: 100%;
+  background: #fff;
+  border: 1px solid var(--cor-principal-2);
+
+  border-radius: 3px;
+  color: #24292e;
+  font-size: 1.3rem;
+  line-height: 20px;
+  min-height: 34px;
+  padding: 6px 8px;
+}
+
+#page-login .login-container .form .input_field .input:focus {
+  border-color: var(--cor-principal-2);
+}
+
+#page-login .login-container .form .sign_btn {
+  margin-top: 20px;
+  background-color: var(--cor-principal-2);
+  border: 1px solid var(--cor-principal-2);
+  width: 100%;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 6px 12px;
+  border-radius: 2px;
+  font-size: 1.6rem;
+}
+
+#page-login .login-container .create_act {
+  border: 1px solid var(--cor-principal-2);
+  border-radius: 5px;
+  padding: 15px 20px;
+  text-align: center;
+  margin: 2rem 3rem;
+  display: none;
+}
+/*LOGIN*/
+/*PAINEL*/
+#page-painel,
+#page-perfil {
+  height: 100vh;
+  width: 100vw;
+}
+
+#page-painel .page-header-content {
+  background: var(--cor-principal-2);
+  padding: 4rem 4rem;
+}
+#page-painel .page-header-content .top-text {
+  color: var(--cor-de-fundo);
+  font: 500 2rem Poppins;
+}
+
+#page-painel .page-header-content .balance {
+  margin-top: 3rem;
+}
+
+#page-painel .page-header-content .balance small {
+  font: 700 1.3rem Archivo;
+}
+
+#page-painel .page-header-content .balance span {
+  
+  font: 700 3rem Archivo;
+}
+
+/*PAINEL*/
+/*PERFIL*/
+#page-perfil .page-header-content {
+  background: var(--cor-principal-2);
+  height: 30rem;
+}
+
+#page-perfil .page-header-content .profile-image,
+.profile-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#page-perfil .page-header-content .profile-image img {
+  height: 15rem;
+  width: 15rem;
+  border-radius: 50%;
+  margin: 1.5rem 5rem 1.5rem 0;
+}
+
+#page-perfil .profile-text {
+  text-align: center;
+  margin-right: 5rem;
+  color: var(--cor-de-fundo);
+  font-family: Archivo;
+  line-height: 2.4rem;
+  margin-bottom: 2rem !important;
+}
+
+#page-perfil .profile-text p {
+  font-weight: 500;
+  font-size: 2.3rem;
+}
+
+#page-perfil .profile-text span {
+  font-weight: 500;
+  font-size: 1.7rem;
+}
+
+#page-perfil main {
+  width: 100%;
+  max-width: 74rem;
+  border-radius: 0.8rem;
+  margin: -3.2rem auto 3.2rem;
+  padding-top: 6rem;
+  overflow: hidden;
+}
+
+#page-perfil main fieldset {
+  border: 0;
+  padding: 0 2.4rem;
+}
+
+#page-perfil main fieldset + fieldset {
+  margin-top: 6rem;
+}
+
+#page-perfil main fieldset legend {
+  font: 700 2.4rem Archivo;
+  margin-bottom: 2.4rem;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-bottom: 1.6rem;
+  border-bottom: 1px solid var(--cor-principal-2);
+}
+
+#page-perfil .input-block {
+  position: relative;
+}
+#page-perfil .input-block + .input-block {
+  margin-top: 1.4rem;
+}
+
+#page-perfil .input-block label {
+  font-size: 1.4rem;
+}
+
+#page-perfil .input-block input {
+  width: 100%;
+  height: 5.6rem;
+  margin-top: 0.8rem;
+  border-radius: 0.8rem;
+  border: 1px solid var(--cor-principal-2);
+  outline: none;
+  padding: 0 1.6rem;
+  font: 1.6rem Archivo;
+}
+
+#page-perfil main footer {
+  padding: 4rem 2.4rem;
+  margin-top: 6.5rem;
+  border: 1px solid var(--cor-principal-2);
+}
+
+#page-perfil main footer p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  text-align: center;
+}
+
+#page-perfil main footer button {
+  width: 100%;
+  height: 5.4rem;
+  background: var(--cor-principal-2);
+  color: var(--cor-de-fundo);
+  border: 0;
+  border-radius: 0.8rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font: 700 1.6rem Archivo;
+  margin-top: 2rem;
+}
+
+#page-perfil .space {
+  margin-top: 8rem;
+  visibility: hidden;
+}
+
+/*PERFIL*/

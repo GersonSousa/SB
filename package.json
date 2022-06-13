@@ -1,0 +1,22 @@
+{
+  "name": "sistema_de_bonificacao",
+  "version": "1.0.0",
+  "description": "Prototipo para o sistema de bonificação",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "GersonSousa"
+  },
+  "author": "Antonio Gerson de Sousa Silva",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.1",
+    "express-handlebars": "^6.0.6"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.16"
+  }
+}
