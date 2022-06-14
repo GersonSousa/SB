@@ -10,7 +10,9 @@ const meuPainel = (req, res) => {
     textTop: 'Meu Painel',
     nome: 'Antonio Gerson de Sousa Silva',
     emoji: '😊',
-    dinheiro: '50,00',
+    frase:
+      'As pessoas costumam dizer que a motivação não dura sempre. Bem, nem o efeito do banho, por isso recomenda-se diariamente.',
+    rank: '1º',
   });
 };
 

@@ -2,97 +2,74 @@
 #page-login {
   height: 100vh;
   width: 100vw;
-
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+#page-login .hero-image {
+  background: var(--color-primary-darker);
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  font-family: Archivo;
+  justify-content: center;
+}
+
+#page-login .hero-image img {
+  height: 12rem;
+  margin: 0 2rem 0 2rem;
+}
+#page-login .hero-image p {
+  margin: 2rem auto;
+  font: 400 3.2rem Poppins;
+  color: var(--color-title-in-primary);
 }
 
 #page-login .login-container {
-  max-width: 43rem;
-  width: 100%;
-  height: auto;
-  margin: 4rem;
-  background: var(--cor-de-fundo);
-  border-radius: 0.7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-#page-login .login-container .logo img {
-  display: block;
-  width: 8rem;
-  height: 8rem;
-  margin: 3rem auto;
+#page-login .login-container img {
+  display: none;
 }
 
 #page-login .login-container .title p {
-  margin-bottom: 15px;
-  font-size: 2.4rem;
-  text-align: center;
-  color: #333;
-  font-family: Archivo;
+  margin-bottom: 1rem;
+  font: 600 3.2rem Poppins;
+  color: var(--color-text-title);
 }
 
 #page-login .login-container .form {
-  margin-bottom: 2rem;
-  background-color: #fff;
-  border: 1px solid var(--cor-principal-2);
-  border-radius: 5px;
-  margin: 2rem 3rem 4rem 3rem;
-  padding: 3rem;
+  min-width: 32rem;
 }
 
-#page-login .login-container .form .input_field {
-  margin-bottom: 15px;
-  position: relative;
-}
-
-#page-login .login-container .form .input_field label {
-  display: block;
-  font-weight: 600;
-  margin-bottom: 7px;
-  color: #24292e;
-  font-size: 1.5rem;
-}
-
-#page-login .login-container .form .input_field .input {
+#page-login .login-container .input-block input {
   width: 100%;
-  background: #fff;
-  border: 1px solid var(--cor-principal-2);
-
-  border-radius: 3px;
-  color: #24292e;
-  font-size: 1.3rem;
-  line-height: 20px;
-  min-height: 34px;
-  padding: 6px 8px;
+  height: 5.4rem;
+  border-radius: 0.8rem;
+  margin-top: 1rem;
+  outline: none;
+  padding: 0 2rem;
+  border: 1px solid var(--color-line-in-white);
 }
 
-#page-login .login-container .form .input_field .input:focus {
-  border-color: var(--cor-principal-2);
-}
-
-#page-login .login-container .form .sign_btn {
-  margin-top: 20px;
-  background-color: var(--cor-principal-2);
-  border: 1px solid var(--cor-principal-2);
+#page-login .login-container .form button {
   width: 100%;
-  color: #fff;
-  font-weight: 600;
+  height: 5.4rem;
+  background: var(--color-primary-darker);
+  color: var(--color-title-in-primary);
+  border: 0;
+  border-radius: 0.8rem;
   cursor: pointer;
-  padding: 6px 12px;
-  border-radius: 2px;
-  font-size: 1.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font: 700 1.6rem Archivo;
+  margin-top: 2rem;
 }
 
-#page-login .login-container .create_act {
-  border: 1px solid var(--cor-principal-2);
-  border-radius: 5px;
-  padding: 15px 20px;
-  text-align: center;
-  margin: 2rem 3rem;
-  display: none;
-}
 /*LOGIN*/
 /*PAINEL*/
 #page-painel,
@@ -102,28 +79,27 @@
 }
 
 #page-painel .page-header-content {
-  background: var(--cor-principal-2);
+  background: var(--color-primary);
   padding: 4rem 4rem;
+  height: 20rem;
 }
+
 #page-painel .page-header-content .top-text {
-  color: var(--cor-de-fundo);
-  font: 500 2rem Poppins;
+  font: 600 2.5rem Archivo;
+  color: var(--color-title-in-primary);
+}
+#page-painel .panel-container {
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: -4rem auto;
+  width: 90vw;
+  max-width: 90rem;
+  border: 1px solid red;
 }
 
-#page-painel .page-header-content .balance {
-  margin-top: 3rem;
-}
-
-#page-painel .page-header-content .balance small {
-  font: 700 1.3rem Archivo;
-}
-
-#page-painel .page-header-content .balance span {
-  
-  font: 700 3rem Archivo;
-}
-
-/*PAINEL*/
+x/*PAINEL*/
 /*PERFIL*/
 #page-perfil .page-header-content {
   background: var(--cor-principal-2);
@@ -250,3 +226,22 @@
 }
 
 /*PERFIL*/
+
+/*responsivo*/
+@media (max-width: 1100px) {
+  #page-login {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #page-login .hero-image {
+    display: none;
+  }
+  #page-login .login-container img {
+    display: block;
+    height: 10rem;
+    margin-bottom: 1rem;
+  }
+}
