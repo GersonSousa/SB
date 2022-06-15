@@ -73,7 +73,9 @@
 /*LOGIN*/
 /*PAINEL*/
 #page-painel,
-#page-perfil {
+#page-perfil,
+#page-auditados,
+#page-relatorio {
   height: 100vh;
   width: 100vw;
 }
@@ -219,7 +221,7 @@
 /*PAINEL*/
 /*PERFIL*/
 #page-perfil .page-header-content {
-  background: var(--color-primary-darker);
+  background: var(--color-primary);
   height: 30rem;
 }
 
@@ -283,7 +285,7 @@
   justify-content: space-between;
   width: 100%;
   padding-bottom: 1.6rem;
-  border-bottom: 1px solid var(--color-primary-darker);
+  border-bottom: 1px solid var(--color-line-in-white);
 }
 
 #page-perfil .input-block {
@@ -302,16 +304,18 @@
   height: 4.6rem;
   margin-top: 0.8rem;
   border-radius: 0.8rem;
-  border: 1px solid var(--color-primary-darker);
+  border: 1px solid var(--color-line-in-white);
   outline: none;
   padding: 0 1.6rem;
   font: 1.6rem Archivo;
+  background: var(--color-input-background);
 }
 
 #page-perfil main footer {
   padding: 4rem 2.4rem;
   margin-top: 6.5rem;
   border: 1px solid var(--color-box-footer);
+  background: var(--color-input-background);
 }
 
 #page-perfil main footer p {
@@ -343,8 +347,130 @@
   margin-top: 8rem;
   visibility: hidden;
 }
-
 /*PERFIL*/
+
+/*AUDITADOS*/
+
+#page-auditados .page-header-content {
+  background: var(--color-primary);
+  padding: 4rem 4rem;
+  height: 20rem;
+}
+
+#page-auditados .table-atd {
+  background: var(--color-box-base);
+  max-width: 100rem;
+  margin: -10.5rem auto 12rem auto;
+  width: 90vw;
+  padding: 1.3rem 2rem;
+  border-radius: 0.7rem;
+}
+
+#page-auditados .table-atd .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--color-line-in-white);
+}
+
+#page-auditados .table-atd .header input {
+  padding: 0.9rem 1rem;
+  background: var(--color-input-background);
+  outline: none;
+  border: 1px solid var(--color-line-in-white);
+  border-radius: 0.35rem;
+  font: 500 1.5rem Archivo;
+}
+
+#page-auditados .table-atd .table-body {
+  padding: 1.6rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0.7rem;
+  margin: 1.5rem auto;
+  color: var(--color-text-title);
+  border-left: 4px solid #9b147d;
+  background: var(--color-box-footer);
+  font: 500 1.4rem Archivo;
+  text-align: center;
+}
+#page-auditados .space {
+  margin: 4rem auto;
+  visibility: hidden;
+}
+
+/*AUDITADOS*/
+/*RELATORIO*/
+#page-relatorio .page-header-content {
+  background: var(--color-primary);
+  padding: 4rem 4rem;
+  height: 20rem;
+}
+#page-relatorio .page-header-content .top-text {
+  font: 600 2.5rem Archivo;
+  color: var(--color-title-in-primary);
+}
+#page-relatorio .filter {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  max-width: 100rem;
+  width: 90vw;
+  gap: 2rem;
+  margin: -5rem auto;
+  font: 500 1.4rem Archivo;
+}
+#page-relatorio .filter .input-block label {
+  color: var(--color-text-in-primary);
+}
+#page-relatorio .filter .input-block .label-filtrar {
+  visibility: hidden;
+}
+#page-relatorio .filter .input-block input,
+#page-relatorio .filter .input-block select,
+#page-relatorio .filter .input-block button {
+  width: 100%;
+  height: 5.4rem;
+  border-radius: 0.8rem;
+  margin-top: 1rem;
+  outline: none;
+  padding: 0 2rem;
+  border: 1px solid var(--color-line-in-white);
+  font: 500 1.6rem Archivo;
+}
+#page-relatorio .filter .input-block button {
+  background: #9b147d;
+  border: none;
+  color: var(--color-box-base);
+}
+#page-relatorio strong {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font: 500 2.4rem Archivo;
+  max-width: 50rem;
+  margin: 20rem auto 0 auto;
+  text-align: center;
+  color: var(--color-text-title);
+  display: none;
+}
+#page-relatorio main {
+  width: 100%;
+  max-width: 100rem;
+  border-radius: 0.8rem;
+  margin: 10rem auto 3.2rem;
+  padding-top: 6rem;
+  overflow: hidden;
+  background: var(--color-box-base);
+  width: 90vw;
+}
+#page-relatorio main table {
+  width: 100%;
+  border-collapse: collapse;
+}
+/*RELATORIO*/
 
 /*responsivo*/
 @media (max-width: 1100px) {
@@ -364,6 +490,23 @@
     margin-bottom: 1rem;
   }
   #page-painel .stats-container {
+    display: flex;
+    flex-direction: column;
+  }
+  #page-auditados .table-atd {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #page-auditados .table-atd .table-body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  #page-auditados .table-atd .table-body div {
+    margin: 1rem auto;
+  }
+  #page-relatorio .filter {
     display: flex;
     flex-direction: column;
   }

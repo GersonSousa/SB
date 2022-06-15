@@ -26,4 +26,18 @@ const meuPerfil = (req, res) => {
   });
 };
 
-module.exports = { login, meuPainel, meuPerfil };
+const auditados = (req, res) => {
+  res.render('Colaborador/auditados', {
+    PageTitle: 'Allrede Telecom - Atendimentos auditados',
+    textTop: 'Atendimentos auditados',
+  });
+};
+
+//Supervisor
+const relatorio = (req, res) => {
+  res.render('Supervisor/relatorio', {
+    PageTitle: 'Allrede Telecom - Relatório',
+    textTop: 'Relatório',
+  });
+};
+module.exports = { login, meuPainel, meuPerfil, auditados, relatorio };
