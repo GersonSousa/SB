@@ -597,9 +597,10 @@
   font: 500 1.6rem Archivo;
 }
 #page-relatorio .filter .input-block button {
-  background: #9b147d;
+  background: var(--color-primary-darker);
   border: none;
   color: var(--color-box-base);
+  cursor: pointer;
 }
 #page-relatorio strong {
   display: flex;
