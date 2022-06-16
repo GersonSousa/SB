@@ -59,9 +59,17 @@ const rank = (req, res) => {
 };
 
 const auditoria = (req, res) => {
-  res.render('Supervisor/meu-painel', {
+  res.render('Geral/auditoria', {
     PageTitle: 'Allrede Telecom - Auditoria',
     textTop: 'Auditoria',
+    setor: 'atendimento',
+  });
+};
+
+const auditarColaborador = (req, res) => {
+  res.render('Geral/auditoria-colaborador', {
+    PageTitle: 'Allrede Telecom - Auditoria do colaborador',
+    textTop: 'Auditoria do colaborador ',
   });
 };
 module.exports = {
@@ -73,4 +81,5 @@ module.exports = {
   meuPainelSupervisor,
   rank,
   auditoria,
+  auditarColaborador,
 };

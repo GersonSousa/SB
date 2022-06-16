@@ -11,6 +11,7 @@ const {
   meuPainelSupervisor,
   auditoria,
   rank,
+  auditarColaborador,
 } = require('../controllers/homePage.controller');
 
 router.get('/', login);
@@ -21,5 +22,6 @@ router.get('/relatorio', relatorio);
 router.get('/meu-painel-supervisor', meuPainelSupervisor);
 router.get('/auditar', auditoria);
 router.get('/rank', rank);
+router.get('/auditar-colaborador', auditarColaborador);
 
 module.exports = router;

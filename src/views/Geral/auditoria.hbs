@@ -1,0 +1,64 @@
+<div id='page-auditoria'>
+{{> header-profile }}
+  <div class='page-header-content'>
+  </div>
+  <form action='' class='filter' method='post'>
+    <div class='input-block'>
+      <label for='setor'>Setor</label>
+      <select name='setor' id='setor'>
+        <option value=''>Selecione um setor</option>
+        <option value=''>Selecione um setor</option>
+        <option value=''>Selecione um setor</option>
+        <option value=''>Selecione um setor</option>
+        <option value=''>Selecione um setor</option>
+        <option value=''>Selecione um setor</option>
+        <option value=''>Selecione um setor</option>
+        <option value=''>Selecione um setor</option>
+      </select>
+    </div>
+    <div class='input-block'>
+      <label for='date'>De</label>
+      <input type='date' name='date' id='date' />
+    </div>
+    <div class='input-block'>
+      <label for='date'>Até</label>
+      <input type='date' name='date' id='date' />
+    </div>
+    <div class='input-block'>
+      <label for='' class='label-filtrar'>filtrar</label>
+      <button type='submit'>Filtrar</button>
+    </div>
+  </form>
+  <main>
+    <div class='table'>
+      <div class='table-header'>
+        <p>Colaboradores do setor {{setor}}</p>
+        <button>Baixar relatório</button>
+      </div>
+      <div class='table-section'>
+        <table>
+          <thead>
+            <tr>
+              <th>Colaborador</th>
+              <th>Quantidade de atendimentos</th>
+              <th>Aprovados</th>
+              <th>Reprovados</th>
+              <th>Ação</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Antonio gerson de sousa silva</td>
+              <td>1000</td>
+              <td>200</td>
+              <td>800</td>
+              <td><a href="/allrede/auditar-colaborador">Auditar</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+  </main>
+  <p class='space'>Espaço adicional</p>
+</div>

@@ -5,6 +5,7 @@ const myChart = new Chart(ctx, {
     labels: ['pessoa1', 'pessoa2', 'pessoa3', 'pessoa4', 'pessoa5'],
     datasets: [
       {
+        label: 'Tipos de atendimentos',
         data: [10, 20, 30, 40, 50],
         backgroundColor: [
           'rgba(155, 20, 125, 1)',
