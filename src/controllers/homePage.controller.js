@@ -40,4 +40,37 @@ const relatorio = (req, res) => {
     textTop: 'Relatório',
   });
 };
-module.exports = { login, meuPainel, meuPerfil, auditados, relatorio };
+
+const meuPainelSupervisor = (req, res) => {
+  res.render('Supervisor/meu-painel', {
+    PageTitle: 'Allrede Telecom - Meu painel',
+    textTop: 'Meu painel',
+    nome: 'Antonio Gerson de Sousa Silva',
+    emoji: '😎',
+  });
+};
+
+//Geral
+const rank = (req, res) => {
+  res.render('Geral/rank', {
+    PageTitle: 'Allrede Telecom - Rank',
+    textTop: 'Rank',
+  });
+};
+
+const auditoria = (req, res) => {
+  res.render('Supervisor/meu-painel', {
+    PageTitle: 'Allrede Telecom - Auditoria',
+    textTop: 'Auditoria',
+  });
+};
+module.exports = {
+  login,
+  meuPainel,
+  meuPerfil,
+  auditados,
+  relatorio,
+  meuPainelSupervisor,
+  rank,
+  auditoria,
+};
