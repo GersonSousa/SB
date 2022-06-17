@@ -30,6 +30,7 @@ const auditados = (req, res) => {
   res.render('Colaborador/auditados', {
     PageTitle: 'Allrede Telecom - Atendimentos auditados',
     textTop: 'Atendimentos auditados',
+    text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus Lorem ipsum dolor sit amet consectetur adipisicing elit. DoloribusLorem ipsum dolor sit amet consectetur adipisicing elit. DoloribusLorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus',
   });
 };
 
