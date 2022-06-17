@@ -78,7 +78,8 @@
 #page-relatorio,
 #page-rank,
 #page-auditoria,
-#page-auditoria-colaborador {
+#page-auditoria-colaborador,
+#page-parecer {
   height: 100vh;
   width: 100vw;
 }
@@ -553,6 +554,16 @@
   font: 500 1.4rem Archivo;
   text-align: center;
 }
+
+#page-auditados .table-atd .table-body button {
+  padding: 1rem 2rem;
+  background: var(--color-primary-darker);
+  color: var(--color-title-in-primary);
+  border: 0;
+  border-radius: 0.8rem;
+  cursor: pointer;
+  font: 400 1.4rem Archivo;
+}
 #page-auditados .space {
   margin: 4rem auto;
   visibility: hidden;
@@ -1018,10 +1029,259 @@
   margin: 8rem 0;
   visibility: hidden;
 }
-
 /*AUDITORIA - COLABORADOR*/
 
+/*PARECER*/
+#page-parecer .page-header-content {
+  background: var(--color-primary);
+  padding: 4rem 4rem;
+  height: 20rem;
+}
+
+#page-parecer main {
+  width: 100%;
+  max-width: 74rem;
+  border-radius: 0.8rem;
+  margin: -10rem auto 3.2rem;
+  padding-top: 6rem;
+  overflow: hidden;
+  background: var(--color-box-base);
+  width: 90vw;
+}
+
+#page-parecer main fieldset {
+  border: 0;
+  padding: 0 2.4rem;
+}
+
+#page-parecer main fieldset + fieldset {
+  margin-top: 6rem;
+}
+
+#page-parecer main fieldset legend {
+  font: 700 2.4rem Archivo;
+  margin-bottom: 2.4rem;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding-bottom: 1.6rem;
+  border-bottom: 1px solid var(--color-line-in-white);
+}
+
+#page-parecer .input-block {
+  position: relative;
+}
+#page-parecer .input-block + .input-block {
+  margin-top: 1.4rem;
+}
+
+#page-parecer .input-block label {
+  font-size: 1.4rem;
+}
+
+#page-parecer .input-block input {
+  width: 100%;
+  height: 4.6rem;
+  margin-top: 0.8rem;
+  border-radius: 0.8rem;
+  border: 1px solid var(--color-line-in-white);
+  outline: none;
+  padding: 0 1.6rem;
+  font: 1.6rem Archivo;
+  background: var(--color-input-background);
+}
+
+#page-parecer .input-block select {
+  width: 100%;
+  height: 4.6rem;
+  margin-top: 0.8rem;
+  border-radius: 0.8rem;
+  border: 1px solid var(--color-line-in-white);
+  outline: none;
+  padding: 0 1.6rem;
+  font: 1.6rem Archivo;
+  background: var(--color-input-background);
+}
+
+#page-parecer .input-block textarea {
+  width: 100%;
+  height: 20rem;
+  margin-top: 0.8rem;
+  border-radius: 0.8rem;
+  border: 1px solid var(--color-line-in-white);
+  outline: none;
+  padding: 2rem 1.6rem;
+  font: 1.6rem Archivo;
+  background: var(--color-input-background);
+}
+
+#page-parecer main footer {
+  padding: 4rem 2.4rem;
+  margin-top: 6.5rem;
+  border: 1px solid var(--color-box-footer);
+  background: var(--color-input-background);
+}
+
+#page-parecer main footer p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  line-height: 2.4rem;
+  text-align: center;
+}
+
+#page-parecer main footer button {
+  width: 100%;
+  height: 5.4rem;
+  background: var(--color-primary-darker);
+  color: var(--color-title-in-primary);
+  border: 0;
+  border-radius: 0.8rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font: 700 1.6rem Archivo;
+  margin-top: 2rem;
+  z-index: 100;
+}
+
+#page-parecer .space {
+  margin-top: 8rem;
+  visibility: hidden;
+}
+
+/*PARECER*/
+
+/*MODAL*/
+.modal-container {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  pointer-events: none;
+  font-family: Archivo;
+}
+.modal {
+  background: var(--color-box-base);
+  max-width: 100rem;
+  width: 90vw;
+  border-radius: 0.7rem;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem;
+  background: var(--color-primary-darker);
+  border-radius: 0.7rem 0.7rem 0 0;
+}
+.modal-header span {
+  color: var(--color-title-in-primary);
+  font: 600 1.6rem Archivo;
+}
+
+.modal-header button {
+  width: 32px;
+  height: 32px;
+  background: var(--color-title-in-primary);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 0.3rem;
+}
+
+.modal-body {
+  padding: 1rem 3rem;
+}
+
+.modal-body .input-block {
+  position: relative;
+}
+
+.modal-body .input-block textarea {
+  width: 100%;
+  height: 12rem;
+  margin-top: 0.8rem;
+  border-radius: 0.8rem;
+  border: 1px solid var(--color-line-in-white);
+  outline: none;
+  padding: 2rem 1rem;
+  font: 1.2rem Archivo;
+  background: var(--color-input-background);
+  resize: none;
+}
+
+.modal-body form {
+  margin: 2rem auto;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 3rem;
+  background: var(--color-box-footer);
+  border-radius: 0 0 0.7rem 0.7rem;
+}
+.modal-footer .modal-footer-btn strong {
+  color: var(--color-text-base);
+  font: 600 1.4rem Archivo;
+  cursor: pointer;
+}
+
+.modal-footer .modal-footer-btn input {
+  background: var(--color-primary-darker);
+  color: var(--color-title-in-primary);
+  border: 0;
+  border-radius: 0.8rem;
+  cursor: pointer;
+  text-decoration: none;
+  font: 600 1.2rem Archivo;
+  padding: 1rem 2rem;
+  margin-left: 1rem;
+}
+
+.modal-footer span {
+  visibility: hidden;
+}
+
+.modal-container.active {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+/*MODAL*/
+
 /*responsivo*/
+@media (max-width: 800px) {
+  #page-painel .table-atd {
+    display: none;
+  }
+  #page-auditados .table-atd {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #page-auditados .table-atd .table-body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  #page-auditados .table-atd .table-body div {
+    margin: 1rem auto;
+  }
+}
+
 @media (max-width: 1100px) {
   #page-login {
     height: 100vh;
@@ -1046,19 +1306,7 @@
     display: flex;
     flex-direction: column;
   }
-  #page-auditados .table-atd {
-    display: flex;
-    flex-direction: column;
-  }
 
-  #page-auditados .table-atd .table-body {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
-  #page-auditados .table-atd .table-body div {
-    margin: 1rem auto;
-  }
   #page-relatorio .filter {
     display: flex;
     flex-direction: column;
@@ -1066,11 +1314,5 @@
   #page-rank .rank-colaboradores {
     display: flex;
     flex-direction: column;
-  }
-}
-
-@media (max-width: 800px) {
-  #page-painel .table-atd {
-    display: none;
   }
 }

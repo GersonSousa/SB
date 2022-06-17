@@ -12,6 +12,7 @@ const {
   auditoria,
   rank,
   auditarColaborador,
+  parecer,
 } = require('../controllers/homePage.controller');
 
 router.get('/', login);
@@ -23,5 +24,6 @@ router.get('/meu-painel-supervisor', meuPainelSupervisor);
 router.get('/auditar', auditoria);
 router.get('/rank', rank);
 router.get('/auditar-colaborador', auditarColaborador);
+router.get('/parecer', parecer);
 
 module.exports = router;

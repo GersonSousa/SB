@@ -1,3 +1,38 @@
 <div id='page-parecer'>
-    
+{{> header-profile }}
+  <div class='page-header-content'></div>
+  <main>
+
+    <fieldset>
+      <legend>Dados do atendimento</legend>
+
+      <div class='input-block'>
+        <label for='name'>Protocolo</label>
+        <input type='text' id='name' value='123456789101012345678' disabled />
+      </div>
+
+      <div class='input-block'>
+        <label for='name'>Parecer</label>
+        <select name='' id='' class='input-block'>
+          <option value='aprovado'>Aprovado</option>
+          <option value='reprovado'>Reprovado</option>
+        </select>
+      </div>
+
+      <div class='input-block'>
+        <label for='name'>Observação sobre o atendimento</label>
+        <textarea name='' id=''></textarea>
+      </div>
+    </fieldset>
+
+    <footer>
+      <p>
+        Todos os atendimentos
+        <br />
+        podem ser contestados e reavaliados
+      </p>
+      <button>Enviar parecer</button>
+    </footer>
+  </main>
+  <p class='space'>Espaço adicional</p>
 </div>

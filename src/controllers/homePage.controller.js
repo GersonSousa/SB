@@ -72,6 +72,14 @@ const auditarColaborador = (req, res) => {
     textTop: 'Auditoria do colaborador ',
   });
 };
+
+const parecer = (req, res) => {
+  res.render('Geral/parecer', {
+    PageTitle: 'Allrede Telecom - Parecer',
+    textTop: 'Parecer sobre o atendimento',
+  });
+};
+
 module.exports = {
   login,
   meuPainel,
@@ -82,4 +90,5 @@ module.exports = {
   rank,
   auditoria,
   auditarColaborador,
+  parecer,
 };
