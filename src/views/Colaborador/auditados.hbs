@@ -1,8 +1,8 @@
 <div id='page-auditados'>
-{{> header-profile }}
+  {{> header-profile }}
+  {{> modal }}
   <div class='page-header-content'>
   </div>
-
   <div class='table-atd'>
     <div class='header'>
       <p>Atendimentos reprovados</p>
@@ -11,38 +11,66 @@
         name='protocolo'
         id='protocolo'
         placeholder='Procurar protocolo'
+        onkeyup='search()'
       />
     </div>
-    <div class='table-body'>
-      <div>
-        <strong>Protocolo</strong>
-        <br /><br />
-        <p>123456789012345</p>
+    <div class='td-atendimentos' id='td-atendimentos'>
+      <div class='table-body'>
+        <div class='protocolo'>
+          <strong>Protocolo</strong>
+          <br /><br />
+          <p id='pt_n'>123456789012345</p>
+        </div>
+        <div class='td_atd'>
+          <strong>Tipo de atendimento</strong>
+          <br />
+          <br />
+          <p>9. DÚVIDAS/INFORMAÇÕES GERAIS</p>
+        </div>
+        <div class='paracer'>
+          <strong>Parecer</strong>
+          <br /><br />
+          <p>Aprovado</p>
+        </div>
+        <div class='dt_parecer'>
+          <strong>Data do Parecer</strong>
+          <br /><br />
+          <p>10-01-2022</p>
+        </div>
+        <div class='acao'>
+          <strong>Ação</strong>
+          <br /><br />
+          <button class='btnOpenModal' onclick='openModal()'>Visualizar</button>
+        </div>
       </div>
-      <div>
-        <strong>Tipo de atendimento</strong>
-        <br />
-        <br />
-        <p>9. DÚVIDAS/INFORMAÇÕES GERAIS</p>
-      </div>
-      <div>
-        <strong>Parecer</strong>
-        <br /><br />
-        <p>Aprovado</p>
-      </div>
-      <div>
-        <strong>Data do Parecer</strong>
-        <br /><br />
-        <p>10-01-2022</p>
-      </div>
-      <div>
-        <strong>Ação</strong>
-        <br /><br />
-        <button class='btnOpenModal' onclick='openModal()'>Visualizar</button>
+      <div class='table-body'>
+        <div class='protocolo'>
+          <strong>Protocolo</strong>
+          <br /><br />
+          <p id='pt_n'>1052</p>
+        </div>
+        <div class='td_atd'>
+          <strong>Tipo de atendimento</strong>
+          <br />
+          <br />
+          <p>9. DÚVIDAS/INFORMAÇÕES GERAIS</p>
+        </div>
+        <div class='paracer'>
+          <strong>Parecer</strong>
+          <br /><br />
+          <p>Aprovado</p>
+        </div>
+        <div class='dt_parecer'>
+          <strong>Data do Parecer</strong>
+          <br /><br />
+          <p>10-01-2022</p>
+        </div>
+        <div class='acao'>
+          <strong>Ação</strong>
+          <br /><br />
+          <button class='btnOpenModal' onclick='openModal()'>Visualizar</button>
+        </div>
       </div>
     </div>
   </div>
-
-{{> modal }}
-
 </div>
