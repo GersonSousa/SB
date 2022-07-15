@@ -690,7 +690,7 @@
 /*RANK*/
 #page-rank .rank-colaboradores {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 2rem;
   margin: 2rem auto;
   justify-content: center;
@@ -708,9 +708,9 @@
   grid-template-columns: 5px 100px 2fr 1fr;
   background: var(--color-box-base);
   gap: 1rem;
-  padding: 0.8rem;
+  padding: 1rem;
   margin: 0.5rem;
-  font: 500 1.4rem Archivo;
+  font: 500 1.3rem Archivo;
   justify-items: center;
   align-items: center;
   border-radius: 0.7rem;

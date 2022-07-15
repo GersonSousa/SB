@@ -81,6 +81,16 @@ const parecer = (req, res) => {
   });
 };
 
+//Auditor
+const auditor = (req, res) => {
+  res.render('Auditor/meu-painel', {
+    PageTitle: 'Allrede Telecom - Auditor',
+    textTop: 'Meu Painel',
+    nome: 'Antonio Gerson de Sousa Silva',
+    emoji: '😎',
+  });
+};
+
 module.exports = {
   login,
   meuPainel,
@@ -92,4 +102,5 @@ module.exports = {
   auditoria,
   auditarColaborador,
   parecer,
+  auditor,
 };
